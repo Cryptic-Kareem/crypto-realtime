@@ -136,5 +136,5 @@ def update_chart(selected_coin, n_intervals):
     return fig
 
 if __name__ == '__main__':
-app.run(host="0.0.0.0", port=8000, debug=True)
+    app.run(host="0.0.0.0", port=8000, debug=True)
   # ✅ Fixed method name
