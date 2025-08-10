@@ -194,4 +194,4 @@ def update_chart(selected_coin, n_intervals):
 
 # Run the app
 if __name__ == '__main__':
-    app.run_server(debug=False)
+    app.run_server(debug=True)
