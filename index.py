@@ -75,7 +75,7 @@ def generate_ohlc_data(coin_id, days=7):
     # Create date range for the past 7 days with hourly data
     end_date = datetime.now()
     start_date = end_date - timedelta(days=days)
-    date_range = pd.date_range(start=start_date, end=end_date, freq='H')
+    date_range = pd.date_range(start=start_date, end=end_date, freq='h')
     
     # Generate random price movements
     np.random.seed(int(time.time()) % 100)  # Change seed for randomness but keep some consistency
@@ -194,4 +194,4 @@ def update_chart(selected_coin, n_intervals):
 
 # Run the app
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run(debug=True)
